@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Black Hawk';
+    src: url('BlackHawk.eot');
+    src: url('BlackHawk.eot?#iefix') format('embedded-opentype'),
+        url('BlackHawk.woff2') format('woff2'),
+        url('BlackHawk.woff') format('woff'),
+        url('BlackHawk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
