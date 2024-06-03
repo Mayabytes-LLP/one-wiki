@@ -21,10 +21,10 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import useEvent from "@/components/hooks/useEvents"
 
 const navItems = [
-  { label: "Home", href: "#", scrollTo: "home" },
-  { label: "Horoscope", href: "#", scrollTo: "horoscope" },
-  { label: "Astrology", href: "#", scrollTo: "astrology" },
-  { label: "2023 Report", href: "#", scrollTo: "report" },
+  { label: "About", href: "#", scrollTo: "about" },
+  { label: "Sucess stories", href: "#", scrollTo: "sucess_stories" },
+  { label: "Mentorship", href: "#", scrollTo: "mentorship" },
+  { label: "Contact Us", href: "#", scrollTo: "contact-us" },
 ]
 
 const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
@@ -61,7 +61,10 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
                   <NavigationMenuLink asChild>
                     <ScrollTo
                       elementId={scrollTo}
-                      className={cn(navigationMenuTriggerStyle(), "")}
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "!bg-transparent font-heading"
+                      )}
                     >
                       {label}
                     </ScrollTo>

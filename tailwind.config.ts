@@ -1,13 +1,14 @@
 import type { Config } from "tailwindcss"
+import { fontFamily } from "tailwindcss/defaultTheme"
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -18,6 +19,11 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        body: ["var(--font-gilroy)", ...fontFamily.sans],
+        heading: ["var(--font-cabinetGrotesk)", ...fontFamily.sans],
+        blackhawk: ["var(--font-blackHawk)", ...fontFamily.sans],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -71,6 +77,12 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      backgroundImage: {
+        banner: "url(/assets/images/banner.png)",
+        layer: "url(/assets/images/layer-1.png)",
+        opacity:
+          "linear-gradient(359deg, #0D0D0F 2.73%, rgba(0, 0, 0, 0.00) 14.99%, rgba(0, 0, 0, 0.00) 77.48%, #111214 97.55%)",
       },
     },
   },
