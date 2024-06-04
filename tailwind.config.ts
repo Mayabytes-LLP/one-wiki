@@ -81,6 +81,7 @@ const config = {
       backgroundImage: {
         banner: "url(/assets/images/banner.png)",
         layer: "url(/assets/images/layer-1.png)",
+        levelup: "url(/assets/images/level-up.png)",
         opacity:
           "linear-gradient(359deg, #0D0D0F 2.73%, rgba(0, 0, 0, 0.00) 14.99%, rgba(0, 0, 0, 0.00) 77.48%, #111214 97.55%)",
       },

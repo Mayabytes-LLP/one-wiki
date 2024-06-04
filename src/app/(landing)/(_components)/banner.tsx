@@ -3,6 +3,9 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
+import Line from "./common/line"
+import Star from "./common/stars"
+
 const socialLinks = [
   { title: "Facebook", link: "#" },
   { title: "Twitter", link: "#" },
@@ -15,28 +18,28 @@ export default function Banner() {
     <section
       className={cn(
         "relative w-full",
-        "bg-banner bg-cover bg-bottom bg-no-repeat",
-        "min-h-screen"
+        "bg-banner bg-cover bg-top bg-no-repeat",
+        "pt-48"
       )}
     >
       <div
         className={cn(
-          "min-h-screen w-full",
+          "h-full w-full",
           "absolute bottom-0 left-0 right-0 top-0",
-          "bg-opacity"
+          "z-20 bg-opacity"
         )}
       ></div>
       <div
         className={cn(
           "container relative",
           "flex flex-col items-center justify-end",
-          "z-10 min-h-screen"
+          "z-30 mt-40"
         )}
       >
         <h1
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text text-transparent",
-            "text-9xl",
+            "text-[190px]",
             "text-center font-heading font-bold leading-none"
           )}
         >
@@ -44,7 +47,7 @@ export default function Banner() {
           <span
             className={cn(
               "block font-blackhawk uppercase leading-none text-secondary",
-              "text-9xl",
+              "text-[238px]",
               "-mt-20"
             )}
           >
@@ -56,7 +59,7 @@ export default function Banner() {
           alt="Box"
           width={633}
           height={648}
-          className={cn("mx-auto", "absolute left-0 right-0 top-40", "-z-10")}
+          className={cn("mx-auto", "absolute -top-28 left-0 right-0", "-z-10")}
         />
         <Image
           src="/assets/images/man.png"
@@ -68,7 +71,7 @@ export default function Banner() {
         <div
           className={cn(
             "flex items-center justify-between",
-            "absolute bottom-28 left-8 right-8"
+            "absolute bottom-32 left-8 right-8"
           )}
         >
           <div className="flex w-fit items-center gap-10">
@@ -100,6 +103,11 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      <Star className="absolute left-24 top-16 z-10" />
+      <Star className="absolute right-36 top-24 z-10" />
+      <Star className="absolute left-24 top-80 z-10" />
+      <Star className="absolute bottom-80 left-44 z-10" />
+      <Star className="absolute bottom-44 right-96 z-10" />
     </section>
   )
 }

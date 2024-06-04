@@ -44,7 +44,7 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
         className={cn(
           "container mx-auto w-full",
           "flex items-center justify-between",
-          "absolute left-0 right-0 top-5 z-30"
+          "absolute left-0 right-0 top-5 z-50"
         )}
       >
         <Image

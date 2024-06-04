@@ -5,6 +5,9 @@ import { cn } from "@/lib/utils"
 
 import { Button } from "@/components/ui/button"
 
+import Globe1 from "./common/globe-1"
+import Star from "./common/stars"
+
 const about = [
   {
     icon: "/assets/images/mission.png",
@@ -70,7 +73,7 @@ export default function WhatWeDo() {
                 "rounded-lg bg-secondary p-20",
                 "flex flex-col items-center justify-center gap-20",
                 "ml-auto w-5/6",
-                "relative z-20 -mt-20"
+                "relative z-50 -mt-16"
               )}
             >
               {about.map((data, index) => (
@@ -86,10 +89,17 @@ export default function WhatWeDo() {
                   <p className="text-xl capitalize">{data.description}</p>
                 </div>
               ))}
+
+              <Globe1 className="absolute -bottom-20 -right-60" />
             </div>
           </div>
         </div>
       </div>
+
+      <Star className="absolute left-28 top-24 z-10" />
+      <Star className="absolute bottom-60 left-32 z-10" />
+      <Star className="absolute bottom-20 left-1/2 z-10" />
+      <Star className="absolute right-28 top-52 z-10" />
     </section>
   )
 }
