@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils"
 
+import Globe4 from "./common/globe-4"
+import Globe5 from "./common/globe-5"
 import TestimonialSlider from "./slider/testimonial-slider"
 
 export default function Result() {
@@ -35,6 +37,8 @@ export default function Result() {
 
         <TestimonialSlider className="mt-28" />
       </div>
+      <Globe4 className="absolute -bottom-64 right-0 z-0" />
+      <Globe5 className="absolute -bottom-96 left-0 z-0" />
     </section>
   )
 }

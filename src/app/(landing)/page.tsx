@@ -1,3 +1,5 @@
+import { cn } from "@/lib/utils"
+
 import Footer from "../_components/footer"
 import Banner from "./(_components)/banner"
 import Circle from "./(_components)/common/circle"
@@ -18,12 +20,14 @@ export default function Home() {
       </div>
       <LevelUp />
       <div className="relative">
-        <Globe3 className="absolute left-0 top-[600px] z-30" />
+        <Globe3 className={cn("absolute left-0 top-[600px] z-30")} />
         <LifeStyle />
         <Control />
       </div>
-      <Result />
-      <Footer />
+      <div className="relative">
+        <Result />
+        <Footer />
+      </div>
     </main>
   )
 }

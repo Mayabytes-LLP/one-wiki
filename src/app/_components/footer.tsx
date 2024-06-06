@@ -7,10 +7,17 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className={cn("bg-footer")}>
-      <div className="container">
-        <div className="mb-52 flex justify-end">
-          <div className="w-3/4">
+    <footer className={cn("bg-footer relative w-full bg-cover bg-no-repeat")}>
+      <div
+        className={cn(
+          "h-full w-full",
+          "absolute bottom-0 left-0 right-0 top-0",
+          "z-10 bg-opacity"
+        )}
+      ></div>
+      <div className="container relative z-20">
+        <div className={cn("flex justify-end", "mb-36 2xl:mb-52")}>
+          <div className="w-3/5 2xl:w-3/4">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
@@ -20,7 +27,12 @@ export default function Footer() {
             >
               Join
             </h2>
-            <h3 className="-mt-16 font-blackhawk text-[150px] leading-none text-secondary">
+            <h3
+              className={cn(
+                "-mt-16 font-blackhawk leading-none text-secondary",
+                "text-8xl 2xl:text-[150px]"
+              )}
+            >
               Will you join?
             </h3>
             <Button
@@ -28,7 +40,7 @@ export default function Footer() {
               variant="default"
               size="default"
               className={cn(
-                "relative  overflow-hidden !rounded-[10px] text-lg"
+                "relative mt-5 overflow-hidden !rounded-[10px] text-lg"
               )}
             >
               <Link href="#">Get Started Today</Link>

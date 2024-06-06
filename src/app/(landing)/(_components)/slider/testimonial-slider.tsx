@@ -104,8 +104,8 @@ export default function TestimonialSlider({
           )
         })}
       </CarouselContent>
-      <CarouselNext className="h-16 w-16 rounded-sm border-white bg-transparent text-white" />
-      <CarouselPrevious className="h-16 w-16 rounded-sm border-white bg-transparent text-white" />
+      <CarouselNext className="right-0 h-16 w-16 rounded-sm border-white bg-transparent text-white" />
+      <CarouselPrevious className="left-0 h-16 w-16 rounded-sm border-white bg-transparent text-white" />
     </Carousel>
   )
 }

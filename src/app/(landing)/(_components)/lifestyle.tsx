@@ -28,7 +28,7 @@ export default function LifeStyle() {
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
               "font-bold uppercase text-transparent",
-              "text-8xl"
+              "text-7xl xl:text-8xl"
             )}
           >
             Lifestyle Upgrade
@@ -66,7 +66,9 @@ export default function LifeStyle() {
             )}
           />
         </div>
-        <Circle2 className="absolute left-40 top-10 z-10" />
+        <Circle2
+          className={cn("absolute left-40 top-10 z-10", "hidden xl:block")}
+        />
       </div>
 
       <Star className={cn("absolute", "top-24", "left-36")} />

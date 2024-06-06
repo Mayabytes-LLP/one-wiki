@@ -11,7 +11,7 @@ const products = [
 
 export default function Control() {
   return (
-    <section className="bg-control relative w-full bg-cover bg-center bg-no-repeat pb-80 pt-40">
+    <section className="relative w-full bg-control bg-cover bg-center bg-no-repeat pb-80 pt-40">
       <div
         className={cn(
           "h-full w-full",
@@ -20,7 +20,13 @@ export default function Control() {
         )}
       ></div>
       <div className="container relative z-20">
-        <div className="mx-auto mb-40 w-4/5 text-center">
+        <div
+          className={cn(
+            "mx-auto text-center",
+            "w-11/12 2xl:w-4/5",
+            "mb-20 2xl:mb-40"
+          )}
+        >
           <h2
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",

@@ -13,7 +13,8 @@ export default function LevelUp() {
     <>
       <section
         className={cn(
-          "bg-levelup relative -mt-16 w-full bg-cover bg-top pt-64"
+          "relative -mt-16 w-full bg-levelup bg-cover bg-top",
+          "pt-40 xl:pt-64"
         )}
       >
         <div
@@ -23,7 +24,9 @@ export default function LevelUp() {
             "z-10 bg-opacity"
           )}
         ></div>
-        <div className={cn("flex items-center", "ml-auto w-11/12")}>
+        <div
+          className={cn("flex items-center", "ml-auto", "w-full xl:w-11/12")}
+        >
           <div className="relative w-1/2">
             <Image
               src="/assets/images/man-2.png"
@@ -44,20 +47,29 @@ export default function LevelUp() {
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-8xl"
+                "text-7xl xl:text-8xl"
               )}
             >
               Level UP
-              <span className="block font-blackhawk text-9xl text-secondary">
+              <span
+                className={cn(
+                  "block font-blackhawk text-secondary",
+                  "text-7xl xl:text-9xl"
+                )}
+              >
                 Your game
               </span>
             </h2>
-            <p className="tetx-lg mb-8 w-3/4 pr-20 font-medium capitalize">
+            <p
+              className={cn("tetx-lg mb-8 w-3/4 pr-20 font-medium capitalize")}
+            >
               Are you tired of barely scraping by knowing that so much more is
               waiting for you? At Ryno Inc, we're dedicated to helping you
               finally achieve your income and lifestyle goals.
             </p>
-            <p className="tetx-lg mb-8 w-3/4 pr-20 font-medium capitalize">
+            <p
+              className={cn("tetx-lg mb-8 w-3/4 pr-20 font-medium capitalize")}
+            >
               Our proprietary Digital Asset Expansion System allows you to earn
               your desired income with total time freedom!
             </p>

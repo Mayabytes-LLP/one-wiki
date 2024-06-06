@@ -39,13 +39,18 @@ export default function WhatWeDo() {
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-8xl",
-                "w-3/5"
+                "text-7xl xl:text-8xl",
+                "w-full lg:w-3/5"
               )}
             >
               What we do
             </h2>
-            <p className="tetx-lg mb-8 w-3/4 pr-20 font-medium capitalize">
+            <p
+              className={cn(
+                "tetx-lg mb-8 font-medium capitalize 2xl:pr-20",
+                "w-full xl:w-3/4"
+              )}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
               quis velit sed nunc imperdiet eget. Consectetur aliquam egestas
               ullamcorper nec arcu, ullamcorper congue duis. Orci, quis turpis
@@ -70,10 +75,11 @@ export default function WhatWeDo() {
           <div className="w-1/2">
             <div
               className={cn(
-                "rounded-lg bg-secondary p-20",
+                "rounded-lg bg-secondary",
                 "flex flex-col items-center justify-center gap-20",
                 "ml-auto w-5/6",
-                "relative z-50 -mt-16"
+                "relative z-50 -mt-16",
+                "p-10 xl:p-20"
               )}
             >
               {about.map((data, index) => (
@@ -86,11 +92,15 @@ export default function WhatWeDo() {
                     className="mx-auto mb-5"
                   />
                   <h3 className="mb-2 font-blackhawk text-5xl">{data.title}</h3>
-                  <p className="text-xl capitalize">{data.description}</p>
+                  <p className={cn("capitalize", "text-lg xl:text-xl")}>
+                    {data.description}
+                  </p>
                 </div>
               ))}
 
-              <Globe1 className="absolute -bottom-20 -right-60" />
+              <Globe1
+                className={cn("absolute -bottom-20", "-right-6 2xl:-right-60")}
+              />
             </div>
           </div>
         </div>
