@@ -1,9 +1,11 @@
+import Footer from "../_components/footer"
 import Banner from "./(_components)/banner"
 import Circle from "./(_components)/common/circle"
 import Globe3 from "./(_components)/common/globe-3"
 import Control from "./(_components)/control"
 import LevelUp from "./(_components)/level-up"
 import LifeStyle from "./(_components)/lifestyle"
+import Result from "./(_components)/result"
 import WhatWeDo from "./(_components)/what-we-do"
 
 export default function Home() {
@@ -20,6 +22,8 @@ export default function Home() {
         <LifeStyle />
         <Control />
       </div>
+      <Result />
+      <Footer />
     </main>
   )
 }

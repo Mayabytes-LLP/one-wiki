@@ -85,6 +85,8 @@ const config = {
         control: "url(/assets/images/control.png)",
         opacity:
           "linear-gradient(359deg, #0D0D0F 2.73%, rgba(0, 0, 0, 0.00) 14.99%, rgba(0, 0, 0, 0.00) 77.48%, #111214 97.55%)",
+        result: "url(/assets/images/result.png)",
+        footer: "url(/assets/images/footer.png)",
       },
     },
   },
