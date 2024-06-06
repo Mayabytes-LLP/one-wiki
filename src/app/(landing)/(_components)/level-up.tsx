@@ -33,7 +33,7 @@ export default function LevelUp() {
             />
             <div
               className={cn(
-                "mx-auto h-96 w-[700px]",
+                "h-96 w-3/4",
                 "bg-gradient-to-t from-gray-900 to-transparent",
                 "absolute bottom-0 left-0 right-0"
               )}
@@ -86,7 +86,7 @@ export default function LevelUp() {
         <Star className={cn("absolute", "bottom-10", "left-36")} />
         <Star className={cn("absolute", "bottom-28", "left-44")} />
 
-        <Globe2 className="absolute -bottom-60 right-0" />
+        <Globe2 className="absolute -bottom-60 right-0 z-50" />
       </section>
     </>
   )
