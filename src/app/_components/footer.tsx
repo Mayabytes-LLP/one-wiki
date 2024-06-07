@@ -7,7 +7,12 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className={cn("relative w-full bg-footer bg-cover bg-no-repeat")}>
+    <footer
+      className={cn(
+        "relative w-full bg-footer bg-cover bg-no-repeat",
+        "pt-20 lg:pt-0"
+      )}
+    >
       <div
         className={cn(
           "h-full w-full",
@@ -16,13 +21,18 @@ export default function Footer() {
         )}
       ></div>
       <div className="container relative z-20">
-        <div className={cn("flex justify-end", "mb-28 xl:mb-36 2xl:mb-52")}>
-          <div className="w-3/5 2xl:w-3/4">
+        <div
+          className={cn(
+            "flex justify-end",
+            "mb-20 lg:mb-28 xl:mb-36 2xl:mb-52"
+          )}
+        >
+          <div className="w-full lg:w-3/5 2xl:w-3/4">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-7xl xl:text-8xl"
+                "text-6xl lg:text-7xl xl:text-8xl"
               )}
             >
               Join
@@ -30,7 +40,7 @@ export default function Footer() {
             <h3
               className={cn(
                 "font-blackhawk leading-none text-secondary",
-                "text-7xl xl:text-8xl 2xl:text-[150px]",
+                "text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px]",
                 "-mt-12 xl:-mt-16"
               )}
             >
@@ -41,14 +51,15 @@ export default function Footer() {
               variant="default"
               size="default"
               className={cn(
-                "relative mt-5 overflow-hidden !rounded-[10px] text-lg"
+                "relative mt-5 overflow-hidden !rounded-[10px] text-lg",
+                "text-base lg:text-lg"
               )}
             >
               <Link href="#">Get Started Today</Link>
             </Button>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex items-end">
           <div className="flex w-1/2 flex-col justify-between">
             <Image
               src="/assets/images/logo.png"
@@ -57,14 +68,14 @@ export default function Footer() {
               height={38}
               className="mb-10"
             />
-            <div className="flex gap-20">
+            <div className="flex gap-5 lg:gap-20">
               <div className="w-fit">
                 <ul>
                   <li className="mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -75,7 +86,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -86,7 +97,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -97,7 +108,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -112,7 +123,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -123,7 +134,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -134,7 +145,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -145,7 +156,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -160,7 +171,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -171,7 +182,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "text-md xl:text-lg"
+                        "lg:text-md text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -184,7 +195,7 @@ export default function Footer() {
             <p
               className={cn(
                 "mb-5 font-heading font-medium capitalize opacity-80",
-                "text-md xl:text-lg"
+                "lg:text-md text-base xl:text-lg"
               )}
             >
               © one wiki, Inc. All rights reserved.

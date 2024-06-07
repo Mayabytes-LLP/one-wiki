@@ -62,12 +62,12 @@ export default function TestimonialSlider({
         {items.map((item, i) => {
           return (
             <CarouselItem key={i} className="basis-full">
-              <div className={cn("mx-auto w-3/4 px-10")}>
+              <div className={cn("mx-auto px-10", "w-3/4")}>
                 <Comma className="mx-auto mb-12 xl:mb-24" />
                 <p
                   className={cn(
                     "font-medium capitalize tracking-wide",
-                    "text-2xl xl:text-3xl"
+                    "text-base lg:text-2xl xl:text-3xl"
                   )}
                 >
                   {item.review}
@@ -78,7 +78,12 @@ export default function TestimonialSlider({
                     "mt-12 xl:mt-28"
                   )}
                 >
-                  <div className="h-28 w-28 overflow-hidden rounded-xl">
+                  <div
+                    className={cn(
+                      "overflow-hidden rounded-xl",
+                      "h-20 w-20 lg:h-28 lg:w-28"
+                    )}
+                  >
                     <Image
                       src={item.image}
                       alt="sliderImage"
@@ -92,12 +97,12 @@ export default function TestimonialSlider({
                       className={cn(
                         "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                         "font-heading font-bold uppercase",
-                        "text-3xl"
+                        "text-xl lg:text-3xl"
                       )}
                     >
                       {item.name}
                     </h5>
-                    <h6 className="text-lg font-medium capitalize">
+                    <h6 className="text-base font-medium capitalize lg:text-lg">
                       {item.designation}
                     </h6>
                   </div>
@@ -107,8 +112,18 @@ export default function TestimonialSlider({
           )
         })}
       </CarouselContent>
-      <CarouselNext className="right-0 h-16 w-16 rounded-sm border-white bg-transparent text-white" />
-      <CarouselPrevious className="left-0 h-16 w-16 rounded-sm border-white bg-transparent text-white" />
+      <CarouselNext
+        className={cn(
+          "right-0 rounded-sm border-white bg-transparent text-white",
+          "h-8 w-8 lg:h-16 lg:w-16"
+        )}
+      />
+      <CarouselPrevious
+        className={cn(
+          "left-0 rounded-sm border-white bg-transparent text-white",
+          "h-8 w-8 lg:h-16 lg:w-16"
+        )}
+      />
     </Carousel>
   )
 }

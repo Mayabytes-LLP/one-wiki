@@ -23,14 +23,18 @@ export default function LifeStyle() {
         )}
       ></div>
       <div
-        className={cn("container relative", "text-center", "py-60 xl:py-96")}
+        className={cn(
+          "container relative",
+          "text-center",
+          "py-20 lg:py-60 xl:py-96"
+        )}
       >
         <div className="relative z-20 mx-auto w-4/5">
           <h2
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
               "font-bold uppercase text-transparent",
-              "text-7xl xl:text-8xl"
+              "text-6xl lg:text-7xl xl:text-8xl"
             )}
           >
             Lifestyle Upgrade
@@ -40,8 +44,9 @@ export default function LifeStyle() {
           </h3>
           <p
             className={cn(
-              "mx-auto mb-5 text-lg font-medium capitalize",
-              "w-3/4 xl:w-3/5"
+              "mx-auto mb-5 font-medium capitalize",
+              "w-full lg:w-3/4 xl:w-3/5",
+              "text-base lg:text-lg"
             )}
           >
             How does the Digital Asset Expansion System work? Leveraging
@@ -50,8 +55,9 @@ export default function LifeStyle() {
           </p>
           <p
             className={cn(
-              "mx-auto mb-10 text-lg font-medium capitalize",
-              "w-3/4 xl:w-3/5"
+              "mx-auto mb-10 font-medium capitalize",
+              "w-full lg:w-3/4 xl:w-3/5",
+              "text-base lg:text-lg"
             )}
           >
             Free up your time by using the Digital Asset Expansion System
@@ -61,7 +67,10 @@ export default function LifeStyle() {
             asChild
             variant="default"
             size="default"
-            className={cn("relative  overflow-hidden !rounded-[10px] text-lg")}
+            className={cn(
+              "relative overflow-hidden !rounded-[10px]",
+              "text-base lg:text-lg"
+            )}
           >
             <Link href="#">Get Started Today</Link>
           </Button>
@@ -74,7 +83,8 @@ export default function LifeStyle() {
             className={cn(
               "mx-auto",
               "absolute -top-28 left-0 right-0",
-              "-z-10"
+              "-z-10",
+              "hidden lg:block"
             )}
           />
         </div>

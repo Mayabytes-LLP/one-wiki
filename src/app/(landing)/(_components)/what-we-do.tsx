@@ -33,13 +33,13 @@ export default function WhatWeDo() {
       )}
     >
       <div className="container">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-5 lg:gap-0">
           <div className="w-1/2">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-7xl xl:text-8xl",
+                "text-6xl lg:text-7xl xl:text-8xl",
                 "w-full lg:w-3/5"
               )}
             >
@@ -47,8 +47,9 @@ export default function WhatWeDo() {
             </h2>
             <p
               className={cn(
-                "tetx-lg mb-8 font-medium capitalize 2xl:pr-20",
-                "w-full xl:w-3/4"
+                "mb-8 font-medium capitalize 2xl:pr-20",
+                "w-full xl:w-3/4",
+                "text-base lg:text-lg"
               )}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
@@ -66,7 +67,8 @@ export default function WhatWeDo() {
               variant="default"
               size="default"
               className={cn(
-                "relative  overflow-hidden !rounded-[10px] text-lg"
+                "relative overflow-hidden !rounded-[10px]",
+                "text-base lg:text-lg"
               )}
             >
               <Link href="#">Unlock your source now!</Link>
@@ -76,10 +78,12 @@ export default function WhatWeDo() {
             <div
               className={cn(
                 "rounded-lg bg-secondary",
-                "flex flex-col items-center justify-center gap-20",
-                "ml-auto w-5/6",
-                "relative z-50 -mt-16",
-                "p-10 xl:p-20"
+                "flex flex-col items-center justify-center",
+                "ml-auto w-full lg:w-5/6",
+                "relative z-50",
+                "p-10 xl:p-20",
+                "gap-10 lg:gap-20",
+                "-mt-8 lg:-mt-16"
               )}
             >
               {about.map((data, index) => (
@@ -91,8 +95,20 @@ export default function WhatWeDo() {
                     height={50}
                     className="mx-auto mb-5"
                   />
-                  <h3 className="mb-2 font-blackhawk text-5xl">{data.title}</h3>
-                  <p className={cn("capitalize", "text-lg xl:text-xl")}>
+                  <h3
+                    className={cn(
+                      "mb-2 font-blackhawk",
+                      "text-3xl lg:text-5xl"
+                    )}
+                  >
+                    {data.title}
+                  </h3>
+                  <p
+                    className={cn(
+                      "capitalize",
+                      "text-base lg:text-lg xl:text-xl"
+                    )}
+                  >
                     {data.description}
                   </p>
                 </div>

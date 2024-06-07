@@ -31,15 +31,15 @@ export default function Banner() {
       ></div>
       <div
         className={cn(
-          "container relative",
+          "container relative z-30",
           "flex flex-col items-center justify-end",
-          "z-30 mt-40"
+          "mt-28 lg:mt-40"
         )}
       >
         <h1
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text text-transparent",
-            "text-9xl 2xl:text-[190px]",
+            "text-8xl lg:text-9xl 2xl:text-[190px]",
             "text-center font-heading font-bold leading-none"
           )}
         >
@@ -47,8 +47,8 @@ export default function Banner() {
           <span
             className={cn(
               "block font-blackhawk uppercase leading-none text-secondary",
-              "text-9xl 2xl:text-[238px]",
-              "-mt-20"
+              "text-8xl lg:text-9xl 2xl:text-[238px]",
+              "-mt-10 lg:-mt-20"
             )}
           >
             Dream
@@ -76,7 +76,8 @@ export default function Banner() {
         <div
           className={cn(
             "flex items-center justify-between",
-            "absolute bottom-32 left-8 right-8"
+            "absolute left-8 right-8",
+            "bottom-16 lg:bottom-32"
           )}
         >
           <div className="flex w-fit items-center gap-10">

@@ -11,7 +11,8 @@ export default function Result() {
         "bg-result bg-cover bg-center",
         "text-center",
         "relative w-full",
-        "pb-20 xl:pb-60"
+        "pb-20 xl:pb-60",
+        "pt-20 lg:pt-0"
       )}
     >
       <div
@@ -26,7 +27,7 @@ export default function Result() {
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
             "mb-5 font-bold uppercase text-transparent",
-            "text-7xl xl:text-8xl"
+            "text-6xl lg:text-7xl xl:text-8xl"
           )}
         >
           AMAZING RESULTS
@@ -34,7 +35,7 @@ export default function Result() {
         <h3
           className={cn(
             "font-blackhawk text-secondary",
-            "text-7xl leading-none xl:text-[150px]",
+            "text-6xl leading-none lg:text-7xl xl:text-[150px]",
             "-mt-12 xl:-mt-16"
           )}
         >

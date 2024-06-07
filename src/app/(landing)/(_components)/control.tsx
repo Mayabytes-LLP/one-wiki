@@ -29,22 +29,22 @@ export default function Control() {
         <div
           className={cn(
             "mx-auto text-center",
-            "w-11/12 2xl:w-4/5",
-            "mb-20 2xl:mb-40"
+            "w-full lg:w-11/12 2xl:w-4/5",
+            "mb-10 lg:mb-20 2xl:mb-40"
           )}
         >
           <h2
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
               "mb-5 font-bold uppercase text-transparent",
-              "text-7xl xl:text-8xl"
+              "text-6xl lg:text-7xl xl:text-8xl"
             )}
           >
             Take Control of Your Life Right Now
             <span
               className={cn(
                 "block font-blackhawk text-secondary",
-                "text-7xl xl:text-9xl"
+                "text-6xl lg:text-7xl xl:text-9xl"
               )}
             >
               unlock now
