@@ -29,17 +29,17 @@ export default function WhatWeDo() {
       className={cn(
         "relative w-full",
         "bg-layer bg-cover bg-no-repeat",
-        "py-0"
+        "py-10 md:py-0"
       )}
     >
       <div className="container">
-        <div className="flex items-center justify-between gap-5 lg:gap-0">
-          <div className="w-1/2">
+        <div className="flex flex-wrap items-center justify-between gap-5 md:flex-nowrap lg:gap-0">
+          <div className="mb-5 w-full md:mb-0 md:w-1/2">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-6xl lg:text-7xl xl:text-8xl",
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl",
                 "w-full lg:w-3/5"
               )}
             >
@@ -74,27 +74,29 @@ export default function WhatWeDo() {
               <Link href="#">Unlock your source now!</Link>
             </Button>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2">
             <div
               className={cn(
                 "rounded-lg bg-secondary",
-                "flex flex-col items-center justify-center",
+                "flex flex-col items-center justify-center sm:flex-row md:flex-col",
                 "ml-auto w-full lg:w-5/6",
                 "relative z-50",
                 "p-10 xl:p-20",
                 "gap-10 lg:gap-20",
-                "-mt-8 lg:-mt-16"
+                "md:-mt-8 lg:-mt-16"
               )}
             >
               {about.map((data, index) => (
                 <div key={index} className="text-center">
-                  <Image
-                    src={data.icon}
-                    alt={data.title}
-                    width={100}
-                    height={50}
-                    className="mx-auto mb-5"
-                  />
+                  <div className="flex min-h-28 items-center justify-center">
+                    <Image
+                      src={data.icon}
+                      alt={data.title}
+                      width={100}
+                      height={50}
+                      className="mx-auto mb-5"
+                    />
+                  </div>
                   <h3
                     className={cn(
                       "mb-2 font-blackhawk",
@@ -126,10 +128,16 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <Star className="absolute left-28 top-24 z-10" />
-      <Star className="absolute bottom-60 left-32 z-10" />
-      <Star className="absolute bottom-20 left-1/2 z-10" />
-      <Star className="absolute right-28 top-52 z-10" />
+      <Star className={cn("absolute left-28 top-24 z-10", "hidden md:block")} />
+      <Star
+        className={cn("absolute bottom-60 left-32 z-10", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute bottom-20 left-1/2 z-10", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute right-28 top-52 z-10", "hidden md:block")}
+      />
     </section>
   )
 }

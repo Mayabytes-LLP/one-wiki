@@ -14,8 +14,8 @@ export default function LevelUp() {
       <section
         className={cn(
           "relative w-full bg-levelup bg-cover bg-top",
-          "pt-20 lg:pt-40 xl:pt-64",
-          "-mt-8 lg:-mt-16",
+          "pt-10 md:pt-20 lg:pt-40 xl:pt-64",
+          "md:-mt-8 lg:-mt-16",
           "px-8"
         )}
       >
@@ -48,14 +48,14 @@ export default function LevelUp() {
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-6xl lg:text-7xl xl:text-8xl"
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
               )}
             >
               Level UP
               <span
                 className={cn(
                   "block font-blackhawk text-secondary",
-                  "text-6xl lg:text-7xl xl:text-9xl"
+                  "text-5xl md:text-6xl lg:text-7xl xl:text-9xl"
                 )}
               >
                 Your game
@@ -93,7 +93,7 @@ export default function LevelUp() {
               className={cn(
                 "relative overflow-hidden !rounded-[10px]",
                 "text-base lg:text-lg",
-                "mb-8"
+                "mb-10 md:mb-8"
               )}
             >
               <Link href="#">Get Started Today</Link>
@@ -101,17 +101,29 @@ export default function LevelUp() {
           </div>
         </div>
 
-        <Star className="absolute right-24 top-96" />
+        <Star className={cn("absolute right-24 top-96", "hidden md:block")} />
         <Star
           className={cn(
             "absolute",
             "top-1/2 -translate-y-1/2",
-            "left-80 -translate-x-1/2 lg:left-1/2"
+            "-translate-x-1/2 md:left-80 lg:left-1/2",
+            "hidden md:block"
           )}
         />
-        <Star className={cn("absolute", "lg:bottom-10", "left-1/2")} />
-        <Star className={cn("absolute", "bottom-10", "left-36")} />
-        <Star className={cn("absolute", "bottom-28", "left-44")} />
+        <Star
+          className={cn(
+            "absolute",
+            "lg:bottom-10",
+            "left-1/2",
+            "hidden: md:block"
+          )}
+        />
+        <Star
+          className={cn("absolute", "bottom-10", "left-36", "hidden: md:block")}
+        />
+        <Star
+          className={cn("absolute", "bottom-28", "left-44", "hidden: md:block")}
+        />
 
         <Globe2
           className={cn("absolute -bottom-60 right-0 z-50", "hidden lg:block")}

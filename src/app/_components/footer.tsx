@@ -10,7 +10,7 @@ export default function Footer() {
     <footer
       className={cn(
         "relative w-full bg-footer bg-cover bg-no-repeat",
-        "pt-20 lg:pt-0"
+        "pt-10 md:pt-20 lg:pt-0"
       )}
     >
       <div
@@ -24,7 +24,7 @@ export default function Footer() {
         <div
           className={cn(
             "flex justify-end",
-            "mb-20 lg:mb-28 xl:mb-36 2xl:mb-52"
+            "mb-10 md:mb-20 lg:mb-28 xl:mb-36 2xl:mb-52"
           )}
         >
           <div className="w-full lg:w-3/5 2xl:w-3/4">
@@ -32,7 +32,7 @@ export default function Footer() {
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-6xl lg:text-7xl xl:text-8xl"
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
               )}
             >
               Join
@@ -40,8 +40,8 @@ export default function Footer() {
             <h3
               className={cn(
                 "font-blackhawk leading-none text-secondary",
-                "text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px]",
-                "-mt-12 xl:-mt-16"
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px]",
+                "-mt-10 md:-mt-12 xl:-mt-16"
               )}
             >
               Will you join?
@@ -60,7 +60,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex items-end">
-          <div className="flex w-1/2 flex-col justify-between">
+          <div className="flex w-3/5 flex-col justify-between md:w-1/2">
             <Image
               src="/assets/images/logo.png"
               alt="Footer Logo"
@@ -75,7 +75,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -86,7 +86,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -97,7 +97,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -108,7 +108,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -123,7 +123,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -134,7 +134,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -145,7 +145,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -156,7 +156,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -171,7 +171,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -182,7 +182,7 @@ export default function Footer() {
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
-                        "lg:text-md text-base xl:text-lg"
+                        "lg:text-md text-sm md:text-base xl:text-lg"
                       )}
                       href="#"
                     >
@@ -195,13 +195,13 @@ export default function Footer() {
             <p
               className={cn(
                 "mb-5 font-heading font-medium capitalize opacity-80",
-                "lg:text-md text-base xl:text-lg"
+                "lg:text-md text-sm md:text-base xl:text-lg"
               )}
             >
               © one wiki, Inc. All rights reserved.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-2/5 md:w-1/2">
             <Image
               src="/assets/images/footer-img.png"
               alt="Footer Image"

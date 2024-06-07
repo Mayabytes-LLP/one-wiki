@@ -19,7 +19,7 @@ export default function Banner() {
       className={cn(
         "relative w-full",
         "bg-banner bg-cover bg-top bg-no-repeat",
-        "pt-20 2xl:pt-48"
+        "pt-5 md:pt-20 2xl:pt-48"
       )}
     >
       <div
@@ -39,7 +39,7 @@ export default function Banner() {
         <h1
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text text-transparent",
-            "text-8xl lg:text-9xl 2xl:text-[190px]",
+            "text-7xl md:text-8xl lg:text-9xl 2xl:text-[190px]",
             "text-center font-heading font-bold leading-none"
           )}
         >
@@ -63,7 +63,8 @@ export default function Banner() {
             "mx-auto",
             "absolute left-0 right-0",
             "-z-10",
-            "-top-16 2xl:-top-28"
+            "-top-16 2xl:-top-28",
+            "hidden md:block"
           )}
         />
         <Image
@@ -80,7 +81,7 @@ export default function Banner() {
             "bottom-16 lg:bottom-32"
           )}
         >
-          <div className="flex w-fit items-center gap-10">
+          <div className="flex w-fit items-center gap-5 lg:gap-10">
             {socialLinks.map((data, index) => (
               <Link
                 key={index}
@@ -88,7 +89,7 @@ export default function Banner() {
                   "font-heading font-bold capitalize",
                   "text-white hover:text-secondary",
                   "transition-all duration-300",
-                  "text-lg"
+                  "text-base lg:text-lg"
                 )}
                 href={data.link}
               >
@@ -109,11 +110,17 @@ export default function Banner() {
           </div>
         </div>
       </div>
-      <Star className="absolute left-24 top-16 z-10" />
-      <Star className="absolute right-36 top-24 z-10" />
-      <Star className="absolute left-24 top-80 z-10" />
-      <Star className="absolute bottom-80 left-44 z-10" />
-      <Star className="absolute bottom-44 right-96 z-10" />
+      <Star className={cn("absolute left-24 top-16 z-10", "hidden md:block")} />
+      <Star
+        className={cn("absolute right-36 top-24 z-10", "hidden md:block")}
+      />
+      <Star className={cn("absolute left-24 top-80 z-10", "hidden md:block")} />
+      <Star
+        className={cn("absolute bottom-80 left-44 z-10", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute bottom-44 right-96 z-10", "hidden md:block")}
+      />
     </section>
   )
 }

@@ -26,7 +26,7 @@ export default function LifeStyle() {
         className={cn(
           "container relative",
           "text-center",
-          "py-20 lg:py-60 xl:py-96"
+          "py-10 md:py-20 lg:py-60 xl:py-96"
         )}
       >
         <div className="relative z-20 mx-auto w-4/5">
@@ -34,7 +34,7 @@ export default function LifeStyle() {
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
               "font-bold uppercase text-transparent",
-              "text-6xl lg:text-7xl xl:text-8xl"
+              "text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
             )}
           >
             Lifestyle Upgrade
@@ -93,18 +93,41 @@ export default function LifeStyle() {
         />
       </div>
 
-      <Star className={cn("absolute", "top-24", "left-36")} />
-      <Star className={cn("absolute", "top-20", "right-12")} />
-      <Star className={cn("absolute", "top-1/2", "left-36")} />
-      <Star className={cn("absolute", "top-48", "right-96")} />
-      <Star className={cn("absolute", "bottom-96", "left-96")} />
-      <Star className={cn("absolute", "bottom-56", "left-28")} />
-      <Star className={cn("absolute", "bottom-20", "left-20")} />
       <Star
-        className={cn("absolute", "bottom-3", "left-1/2 -translate-x-1/2")}
+        className={cn("absolute", "top-24", "md:left-36", "hidden md:block")}
       />
-      <Star className={cn("absolute", "bottom-64", "right-80")} />
-      <Star className={cn("absolute", "bottom-28", "right-20")} />
+      <Star
+        className={cn("absolute", "top-20", "right-12", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "top-1/2", "md:left-36", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "top-48", "right-96", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "bottom-96", "left-96", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "bottom-56", "left-28", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "bottom-20", "left-20", "hidden md:block")}
+      />
+      <Star
+        className={cn(
+          "absolute",
+          "bottom-3",
+          "left-1/2 -translate-x-1/2",
+          "hidden md:block"
+        )}
+      />
+      <Star
+        className={cn("absolute", "bottom-64", "right-80", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute", "bottom-28", "right-20", "hidden md:block")}
+      />
     </section>
   )
 }

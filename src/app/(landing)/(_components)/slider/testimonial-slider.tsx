@@ -62,8 +62,8 @@ export default function TestimonialSlider({
         {items.map((item, i) => {
           return (
             <CarouselItem key={i} className="basis-full">
-              <div className={cn("mx-auto px-10", "w-3/4")}>
-                <Comma className="mx-auto mb-12 xl:mb-24" />
+              <div className={cn("mx-auto px-10", "w-11/12 md:w-3/4")}>
+                <Comma className="mx-auto mb-10 md:mb-12 xl:mb-24" />
                 <p
                   className={cn(
                     "font-medium capitalize tracking-wide",
@@ -75,7 +75,7 @@ export default function TestimonialSlider({
                 <div
                   className={cn(
                     "mx-auto flex w-fit items-center gap-5",
-                    "mt-12 xl:mt-28"
+                    "mt-10 md:mt-12 xl:mt-28"
                   )}
                 >
                   <div
