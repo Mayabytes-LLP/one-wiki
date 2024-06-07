@@ -29,7 +29,7 @@ export default function LifeStyle() {
           "py-10 md:py-20 lg:py-60 xl:py-96"
         )}
       >
-        <div className="relative z-20 mx-auto w-4/5">
+        <div className="w-afull relative z-20 mx-auto sm:w-4/5">
           <h2
             className={cn(
               "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",

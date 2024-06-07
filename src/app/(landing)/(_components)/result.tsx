@@ -36,7 +36,7 @@ export default function Result() {
           className={cn(
             "font-blackhawk text-secondary",
             "text-5xl leading-none md:text-6xl lg:text-7xl xl:text-[150px]",
-            "-mt-12 xl:-mt-16"
+            "-mt-8 sm:-mt-10 xl:-mt-16"
           )}
         >
           Will You Be Next?

@@ -59,8 +59,13 @@ export default function Footer() {
             </Button>
           </div>
         </div>
-        <div className="flex items-end">
-          <div className="flex w-3/5 flex-col justify-between md:w-1/2">
+        <div className={cn("flex items-end", "flex-wrap sm:flex-nowrap")}>
+          <div
+            className={cn(
+              "flex flex-col justify-between",
+              "w-full sm:w-3/5 md:w-1/2"
+            )}
+          >
             <Image
               src="/assets/images/logo.png"
               alt="Footer Logo"
@@ -71,7 +76,7 @@ export default function Footer() {
             <div className="flex gap-5 lg:gap-20">
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -82,7 +87,7 @@ export default function Footer() {
                       About
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -93,7 +98,7 @@ export default function Footer() {
                       Sucess stories
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -104,7 +109,7 @@ export default function Footer() {
                       Mentorship
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -119,7 +124,7 @@ export default function Footer() {
               </div>
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -130,7 +135,7 @@ export default function Footer() {
                       facebook
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -141,7 +146,7 @@ export default function Footer() {
                       Twitter
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -152,7 +157,7 @@ export default function Footer() {
                       instagram
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -167,7 +172,7 @@ export default function Footer() {
               </div>
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -178,7 +183,7 @@ export default function Footer() {
                       Privacy policy
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
                       className={cn(
                         "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
@@ -195,13 +200,14 @@ export default function Footer() {
             <p
               className={cn(
                 "mb-5 font-heading font-medium capitalize opacity-80",
-                "lg:text-md text-sm md:text-base xl:text-lg"
+                "lg:text-md text-sm md:text-base xl:text-lg",
+                "mt-10 sm:mt-0"
               )}
             >
               © one wiki, Inc. All rights reserved.
             </p>
           </div>
-          <div className="w-2/5 md:w-1/2">
+          <div className={cn("w-2/5 md:w-1/2", "hidden sm:block")}>
             <Image
               src="/assets/images/footer-img.png"
               alt="Footer Image"

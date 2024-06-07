@@ -78,10 +78,12 @@ export default function Banner() {
           className={cn(
             "flex items-center justify-between",
             "absolute left-8 right-8",
-            "bottom-16 lg:bottom-32"
+            "bottom-5 sm:bottom-16 lg:bottom-32",
+            "flex-wrap sm:flex-nowrap",
+            "gap-5 sm:gap-0"
           )}
         >
-          <div className="flex w-fit items-center gap-5 lg:gap-10">
+          <div className="flex w-full items-center gap-5 sm:w-fit lg:gap-10">
             {socialLinks.map((data, index) => (
               <Link
                 key={index}
@@ -97,14 +99,14 @@ export default function Banner() {
               </Link>
             ))}
           </div>
-          <div className="w-fit">
+          <div className="w-full sm:w-fit">
             <Link href="#">
               <Image
                 src="/assets/images/scroll.png"
                 alt="Man"
                 width={114}
                 height={43}
-                className="relative z-10"
+                className="relative z-10 mx-auto"
               />
             </Link>
           </div>

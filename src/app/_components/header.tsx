@@ -80,7 +80,10 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
             asChild
             variant="default"
             size="default"
-            className={cn("relative  overflow-hidden !rounded-[10px] text-lg")}
+            className={cn(
+              "relative  overflow-hidden !rounded-[10px] text-base lg:text-lg",
+              "hidden sm:block"
+            )}
           >
             <Link href="#">Unlock your source now!</Link>
           </Button>

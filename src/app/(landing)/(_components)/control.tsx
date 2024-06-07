@@ -51,16 +51,22 @@ export default function Control() {
             </span>
           </h2>
         </div>
-        <div className="flex items-center text-center">
+        <div
+          className={cn(
+            "flex items-center text-center",
+            "flex-wrap sm:flex-nowrap",
+            "gap-10 sm:gap-0"
+          )}
+        >
           {products.map((data, index) => (
-            <div className="w-1/2">
+            <div className="w-full sm:w-1/2">
               <div className="group relative" key={index}>
                 <Image
                   src={data.image}
                   alt={data.title}
                   width={405}
                   height={517}
-                  className="mx-auto mb-10"
+                  className="mx-auto mb-5 sm:mb-10"
                 />
                 <h4
                   className={cn(

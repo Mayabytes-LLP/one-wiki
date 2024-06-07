@@ -26,8 +26,16 @@ export default function LevelUp() {
             "z-10 bg-opacity"
           )}
         ></div>
-        <div className={cn("flex items-end", "ml-auto", "w-full xl:w-11/12")}>
-          <div className="relative w-1/2">
+        <div
+          className={cn(
+            "flex items-end",
+            "ml-auto",
+            "w-full xl:w-11/12",
+            "flex-wrap sm:flex-nowrap",
+            "gap-10 sm:gap-0"
+          )}
+        >
+          <div className="relative w-full sm:w-1/2">
             <Image
               src="/assets/images/man-2.png"
               alt="Man"
@@ -43,7 +51,7 @@ export default function LevelUp() {
               )}
             ></div>
           </div>
-          <div className={cn("w-1/2", "relative z-30")}>
+          <div className={cn("w-full sm:w-1/2", "relative z-30")}>
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",

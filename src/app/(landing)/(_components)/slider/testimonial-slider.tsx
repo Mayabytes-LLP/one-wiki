@@ -75,13 +75,14 @@ export default function TestimonialSlider({
                 <div
                   className={cn(
                     "mx-auto flex w-fit items-center gap-5",
-                    "mt-10 md:mt-12 xl:mt-28"
+                    "mt-10 md:mt-12 xl:mt-28",
+                    "flex-wrap sm:flex-nowrap"
                   )}
                 >
                   <div
                     className={cn(
                       "overflow-hidden rounded-xl",
-                      "h-20 w-20 lg:h-28 lg:w-28"
+                      "mx-auto h-20 w-20 lg:h-28 lg:w-28"
                     )}
                   >
                     <Image
@@ -89,10 +90,10 @@ export default function TestimonialSlider({
                       alt="sliderImage"
                       height={112}
                       width={112}
-                      className="object-cover"
+                      className="mx-auto object-cover"
                     />
                   </div>
-                  <div className="text-left">
+                  <div className="w-full text-center sm:w-fit sm:text-left">
                     <h5
                       className={cn(
                         "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
