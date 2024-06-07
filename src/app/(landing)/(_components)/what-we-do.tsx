@@ -99,7 +99,11 @@ export default function WhatWeDo() {
               ))}
 
               <Globe1
-                className={cn("absolute -bottom-20", "-right-6 2xl:-right-60")}
+                className={cn(
+                  "absolute -bottom-20",
+                  "-right-6 2xl:-right-60",
+                  "hidden lg:block"
+                )}
               />
             </div>
           </div>

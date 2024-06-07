@@ -63,17 +63,20 @@ export default function TestimonialSlider({
           return (
             <CarouselItem key={i} className="basis-full">
               <div className={cn("mx-auto w-3/4 px-10")}>
-                <Comma className="mx-auto mb-24" />
+                <Comma className="mx-auto mb-12 xl:mb-24" />
                 <p
                   className={cn(
                     "font-medium capitalize tracking-wide",
-                    "text-3xl"
+                    "text-2xl xl:text-3xl"
                   )}
                 >
                   {item.review}
                 </p>
                 <div
-                  className={cn("mx-auto mt-28 flex w-fit items-center gap-5")}
+                  className={cn(
+                    "mx-auto flex w-fit items-center gap-5",
+                    "mt-12 xl:mt-28"
+                  )}
                 >
                   <div className="h-28 w-28 overflow-hidden rounded-xl">
                     <Image
@@ -84,7 +87,7 @@ export default function TestimonialSlider({
                       className="object-cover"
                     />
                   </div>
-                  <div>
+                  <div className="text-left">
                     <h5
                       className={cn(
                         "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",

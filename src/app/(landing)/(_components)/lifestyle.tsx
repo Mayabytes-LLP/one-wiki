@@ -22,7 +22,9 @@ export default function LifeStyle() {
           "z-20 bg-opacity"
         )}
       ></div>
-      <div className={cn("container relative", "text-center", "py-96")}>
+      <div
+        className={cn("container relative", "text-center", "py-60 xl:py-96")}
+      >
         <div className="relative z-20 mx-auto w-4/5">
           <h2
             className={cn(
@@ -36,12 +38,22 @@ export default function LifeStyle() {
           <h3 className="mb-5 font-blackhawk text-5xl text-secondary">
             It's YOUR Turn
           </h3>
-          <p className="tetx-lg mx-auto mb-5 w-3/5 font-medium capitalize">
+          <p
+            className={cn(
+              "mx-auto mb-5 text-lg font-medium capitalize",
+              "w-3/4 xl:w-3/5"
+            )}
+          >
             How does the Digital Asset Expansion System work? Leveraging
             Artificial Intelligence, along with our proprietary method means you
             work smarter, not harder; all while getting paid the BIG bucks!
           </p>
-          <p className="tetx-lg mx-auto mb-10 w-3/5 font-medium capitalize">
+          <p
+            className={cn(
+              "mx-auto mb-10 text-lg font-medium capitalize",
+              "w-3/4 xl:w-3/5"
+            )}
+          >
             Free up your time by using the Digital Asset Expansion System
             starting today.
           </p>

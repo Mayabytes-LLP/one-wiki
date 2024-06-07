@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className={cn("bg-footer relative w-full bg-cover bg-no-repeat")}>
+    <footer className={cn("relative w-full bg-footer bg-cover bg-no-repeat")}>
       <div
         className={cn(
           "h-full w-full",
@@ -16,21 +16,22 @@ export default function Footer() {
         )}
       ></div>
       <div className="container relative z-20">
-        <div className={cn("flex justify-end", "mb-36 2xl:mb-52")}>
+        <div className={cn("flex justify-end", "mb-28 xl:mb-36 2xl:mb-52")}>
           <div className="w-3/5 2xl:w-3/4">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-8xl"
+                "text-7xl xl:text-8xl"
               )}
             >
               Join
             </h2>
             <h3
               className={cn(
-                "-mt-16 font-blackhawk leading-none text-secondary",
-                "text-8xl 2xl:text-[150px]"
+                "font-blackhawk leading-none text-secondary",
+                "text-7xl xl:text-8xl 2xl:text-[150px]",
+                "-mt-12 xl:-mt-16"
               )}
             >
               Will you join?
@@ -61,7 +62,10 @@ export default function Footer() {
                 <ul>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       About
@@ -69,7 +73,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Sucess stories
@@ -77,7 +84,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Mentorship
@@ -85,7 +95,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Contact Us
@@ -97,7 +110,10 @@ export default function Footer() {
                 <ul>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       facebook
@@ -105,7 +121,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Twitter
@@ -113,7 +132,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       instagram
@@ -121,7 +143,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       linkedin
@@ -133,7 +158,10 @@ export default function Footer() {
                 <ul>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Privacy policy
@@ -141,7 +169,10 @@ export default function Footer() {
                   </li>
                   <li className="mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "text-md xl:text-lg"
+                      )}
                       href="#"
                     >
                       Terms & condition
@@ -150,14 +181,19 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <p className="mb-5 font-heading text-lg font-medium capitalize opacity-80">
+            <p
+              className={cn(
+                "mb-5 font-heading font-medium capitalize opacity-80",
+                "text-md xl:text-lg"
+              )}
+            >
               © one wiki, Inc. All rights reserved.
             </p>
           </div>
           <div className="w-1/2">
             <Image
               src="/assets/images/footer-img.png"
-              alt="Footer Logo"
+              alt="Footer Image"
               width={854}
               height={680}
             />
