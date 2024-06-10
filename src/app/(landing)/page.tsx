@@ -20,7 +20,9 @@ export default function Home() {
       </div>
       <LevelUp />
       <div className="relative">
-        <Globe3 className={cn("absolute left-0 top-[600px] z-30")} />
+        <Globe3
+          className={cn("absolute left-0 top-[600px] z-30", "hidden lg:block")}
+        />
         <LifeStyle />
         <Control />
       </div>

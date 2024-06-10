@@ -19,7 +19,7 @@ export default function Banner() {
       className={cn(
         "relative w-full",
         "bg-banner bg-cover bg-top bg-no-repeat",
-        "pt-20 2xl:pt-48"
+        "pt-5 md:pt-20 2xl:pt-48"
       )}
     >
       <div
@@ -31,15 +31,15 @@ export default function Banner() {
       ></div>
       <div
         className={cn(
-          "container relative",
+          "container relative z-30",
           "flex flex-col items-center justify-end",
-          "z-30 mt-40"
+          "mt-28 lg:mt-40"
         )}
       >
         <h1
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text text-transparent",
-            "text-9xl 2xl:text-[190px]",
+            "text-7xl md:text-8xl lg:text-9xl 2xl:text-[190px]",
             "text-center font-heading font-bold leading-none"
           )}
         >
@@ -47,8 +47,8 @@ export default function Banner() {
           <span
             className={cn(
               "block font-blackhawk uppercase leading-none text-secondary",
-              "text-9xl 2xl:text-[238px]",
-              "-mt-20"
+              "text-8xl lg:text-9xl 2xl:text-[238px]",
+              "-mt-10 lg:-mt-20"
             )}
           >
             Dream
@@ -63,7 +63,8 @@ export default function Banner() {
             "mx-auto",
             "absolute left-0 right-0",
             "-z-10",
-            "-top-16 2xl:-top-28"
+            "-top-16 2xl:-top-28",
+            "hidden md:block"
           )}
         />
         <Image
@@ -76,10 +77,13 @@ export default function Banner() {
         <div
           className={cn(
             "flex items-center justify-between",
-            "absolute bottom-32 left-8 right-8"
+            "absolute left-8 right-8",
+            "bottom-5 sm:bottom-16 lg:bottom-32",
+            "flex-wrap sm:flex-nowrap",
+            "gap-5 sm:gap-0"
           )}
         >
-          <div className="flex w-fit items-center gap-10">
+          <div className="flex w-full items-center gap-5 sm:w-fit lg:gap-10">
             {socialLinks.map((data, index) => (
               <Link
                 key={index}
@@ -87,7 +91,7 @@ export default function Banner() {
                   "font-heading font-bold capitalize",
                   "text-white hover:text-secondary",
                   "transition-all duration-300",
-                  "text-lg"
+                  "text-base lg:text-lg"
                 )}
                 href={data.link}
               >
@@ -95,24 +99,30 @@ export default function Banner() {
               </Link>
             ))}
           </div>
-          <div className="w-fit">
+          <div className="w-full sm:w-fit">
             <Link href="#">
               <Image
                 src="/assets/images/scroll.png"
                 alt="Man"
                 width={114}
                 height={43}
-                className="relative z-10"
+                className="relative z-10 mx-auto"
               />
             </Link>
           </div>
         </div>
       </div>
-      <Star className="absolute left-24 top-16 z-10" />
-      <Star className="absolute right-36 top-24 z-10" />
-      <Star className="absolute left-24 top-80 z-10" />
-      <Star className="absolute bottom-80 left-44 z-10" />
-      <Star className="absolute bottom-44 right-96 z-10" />
+      <Star className={cn("absolute left-24 top-16 z-10", "hidden md:block")} />
+      <Star
+        className={cn("absolute right-36 top-24 z-10", "hidden md:block")}
+      />
+      <Star className={cn("absolute left-24 top-80 z-10", "hidden md:block")} />
+      <Star
+        className={cn("absolute bottom-80 left-44 z-10", "hidden md:block")}
+      />
+      <Star
+        className={cn("absolute bottom-44 right-96 z-10", "hidden md:block")}
+      />
     </section>
   )
 }

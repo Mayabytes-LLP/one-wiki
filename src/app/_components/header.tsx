@@ -63,7 +63,7 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
                       elementId={scrollTo}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "!bg-transparent font-heading"
+                        "!bg-transparent p-0 font-heading"
                       )}
                     >
                       {label}
@@ -75,14 +75,60 @@ const Header = forwardRef<HTMLDivElement, HTMLAttributes<HTMLDivElement>>(
             {children}
           </NavigationMenuList>
         </NavigationMenu>
-        <Button
-          asChild
-          variant="default"
-          size="default"
-          className={cn("relative  overflow-hidden !rounded-[10px] text-lg")}
-        >
-          <Link href="#">Unlock your source now!</Link>
-        </Button>
+        <div className="flex items-center gap-5">
+          <Button
+            asChild
+            variant="default"
+            size="default"
+            className={cn(
+              "relative  overflow-hidden !rounded-[10px] text-base lg:text-lg",
+              "hidden sm:block"
+            )}
+          >
+            <Link href="#">Unlock your source now!</Link>
+          </Button>
+          <div className="block lg:hidden">
+            <Sheet>
+              <SheetTrigger className="" asChild>
+                <Button
+                  variant="default"
+                  className={cn("w-14 !p-0", "h-11 lg:h-14")}
+                >
+                  <Menu className="text-white" size={20} />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <div className="flex w-full flex-col gap-6">
+                  <Link href="#" ref={logoRef}>
+                    <Image
+                      alt="logo"
+                      src="/assets/images/logo.png"
+                      width={119}
+                      height={38}
+                    />
+                  </Link>
+                  <ul className={cn("first:*pt-0 last:*pb-0 grid *:py-2")}>
+                    {navItems.map(({ label, href, scrollTo }) => (
+                      <li key={scrollTo}>
+                        <ScrollTo
+                          elementId={label}
+                          variant="link"
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "px-5 font-bold uppercase text-neutral-500"
+                          )}
+                        >
+                          {label}
+                        </ScrollTo>
+                      </li>
+                    ))}
+                    {children}
+                  </ul>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+        </div>
       </motion.header>
     )
   }

@@ -11,7 +11,8 @@ export default function Result() {
         "bg-result bg-cover bg-center",
         "text-center",
         "relative w-full",
-        "pb-60"
+        "pb-10 md:pb-20 xl:pb-60",
+        "pt-10 md:pt-20 lg:pt-0"
       )}
     >
       <div
@@ -26,19 +27,29 @@ export default function Result() {
           className={cn(
             "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
             "mb-5 font-bold uppercase text-transparent",
-            "text-8xl"
+            "text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
           )}
         >
           AMAZING RESULTS
         </h2>
-        <h3 className="-mt-16 font-blackhawk text-[150px] leading-none text-secondary">
+        <h3
+          className={cn(
+            "font-blackhawk text-secondary",
+            "text-5xl leading-none md:text-6xl lg:text-7xl xl:text-[150px]",
+            "-mt-8 sm:-mt-10 xl:-mt-16"
+          )}
+        >
           Will You Be Next?
         </h3>
 
-        <TestimonialSlider className="mt-28" />
+        <TestimonialSlider className="mt-10 xl:mt-28" />
       </div>
-      <Globe4 className="absolute -bottom-64 right-0 z-0" />
-      <Globe5 className="absolute -bottom-96 left-0 z-0" />
+      <Globe4
+        className={cn("absolute -bottom-64 right-0 z-0", "hidden lg:block")}
+      />
+      <Globe5
+        className={cn("absolute -bottom-96 left-0 z-0", "hidden lg:block")}
+      />
     </section>
   )
 }

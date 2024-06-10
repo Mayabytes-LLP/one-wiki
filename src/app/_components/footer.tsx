@@ -7,7 +7,12 @@ import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (
-    <footer className={cn("bg-footer relative w-full bg-cover bg-no-repeat")}>
+    <footer
+      className={cn(
+        "relative w-full bg-footer bg-cover bg-no-repeat",
+        "pt-10 md:pt-20 lg:pt-0"
+      )}
+    >
       <div
         className={cn(
           "h-full w-full",
@@ -16,21 +21,27 @@ export default function Footer() {
         )}
       ></div>
       <div className="container relative z-20">
-        <div className={cn("flex justify-end", "mb-36 2xl:mb-52")}>
-          <div className="w-3/5 2xl:w-3/4">
+        <div
+          className={cn(
+            "flex justify-end",
+            "mb-10 md:mb-20 lg:mb-28 xl:mb-36 2xl:mb-52"
+          )}
+        >
+          <div className="w-full lg:w-3/5 2xl:w-3/4">
             <h2
               className={cn(
                 "bg-gradient-to-br from-white to-[rgba(255,255,255,0.25)] bg-clip-text",
                 "mb-5 font-bold uppercase text-transparent",
-                "text-8xl"
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl"
               )}
             >
               Join
             </h2>
             <h3
               className={cn(
-                "-mt-16 font-blackhawk leading-none text-secondary",
-                "text-8xl 2xl:text-[150px]"
+                "font-blackhawk leading-none text-secondary",
+                "text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-[150px]",
+                "-mt-10 md:-mt-12 xl:-mt-16"
               )}
             >
               Will you join?
@@ -40,15 +51,21 @@ export default function Footer() {
               variant="default"
               size="default"
               className={cn(
-                "relative mt-5 overflow-hidden !rounded-[10px] text-lg"
+                "relative mt-5 overflow-hidden !rounded-[10px] text-lg",
+                "text-base lg:text-lg"
               )}
             >
               <Link href="#">Get Started Today</Link>
             </Button>
           </div>
         </div>
-        <div className="flex">
-          <div className="flex w-1/2 flex-col justify-between">
+        <div className={cn("flex items-end", "flex-wrap sm:flex-nowrap")}>
+          <div
+            className={cn(
+              "flex flex-col justify-between",
+              "w-full sm:w-3/5 md:w-1/2"
+            )}
+          >
             <Image
               src="/assets/images/logo.png"
               alt="Footer Logo"
@@ -56,36 +73,48 @@ export default function Footer() {
               height={38}
               className="mb-10"
             />
-            <div className="flex gap-20">
+            <div className="flex gap-5 lg:gap-20">
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       About
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Sucess stories
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Mentorship
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Contact Us
@@ -95,33 +124,45 @@ export default function Footer() {
               </div>
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       facebook
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Twitter
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       instagram
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       linkedin
@@ -131,17 +172,23 @@ export default function Footer() {
               </div>
               <div className="w-fit">
                 <ul>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Privacy policy
                     </a>
                   </li>
-                  <li className="mb-5">
+                  <li className="mb-2 sm:mb-5">
                     <a
-                      className="text-lg capitalize opacity-80 transition-all duration-300 hover:opacity-100"
+                      className={cn(
+                        "capitalize opacity-80 transition-all duration-300 hover:opacity-100",
+                        "lg:text-md text-sm md:text-base xl:text-lg"
+                      )}
                       href="#"
                     >
                       Terms & condition
@@ -150,14 +197,20 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <p className="mb-5 font-heading text-lg font-medium capitalize opacity-80">
+            <p
+              className={cn(
+                "mb-5 font-heading font-medium capitalize opacity-80",
+                "lg:text-md text-sm md:text-base xl:text-lg",
+                "mt-10 sm:mt-0"
+              )}
+            >
               © one wiki, Inc. All rights reserved.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className={cn("w-2/5 md:w-1/2", "hidden sm:block")}>
             <Image
               src="/assets/images/footer-img.png"
-              alt="Footer Logo"
+              alt="Footer Image"
               width={854}
               height={680}
             />
