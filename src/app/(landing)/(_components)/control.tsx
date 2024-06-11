@@ -59,8 +59,8 @@ export default function Control() {
           )}
         >
           {products.map((data, index) => (
-            <div className="w-full sm:w-1/2">
-              <div className="group relative" key={index}>
+            <div className="w-full sm:w-1/2" key={index}>
+              <div className="group relative">
                 <Image
                   src={data.image}
                   alt={data.title}
