@@ -40,7 +40,7 @@ export default function LifeStyle() {
             Lifestyle Upgrade
           </h2>
           <h3 className="mb-5 font-blackhawk text-5xl text-secondary">
-            It's YOUR Turn
+            It&apos;s YOUR Turn
           </h3>
           <p
             className={cn(
